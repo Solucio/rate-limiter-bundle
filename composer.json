@@ -1,0 +1,32 @@
+{
+    "name": "solucio/rate-limiter-bundle",
+    "description": "Supplies attribute for symfony rate limiter",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "homepage": "https://www.solucio.com.au",
+    "keywords": ["limiter", "rate-limiter", "attributes", "annotation"],
+    "autoload": {
+        "psr-4": {
+            "Solucio\\Bundle\\RateLimiter\\": "src/"
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Brenton Bull",
+            "email": "bbull@solucio.com.au"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "symfony/rate-limiter": "^6.0",
+        "symfony/framework-bundle": "^6.0"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "minimum-stability": "dev"
+}
